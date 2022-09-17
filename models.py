@@ -1,3 +1,12 @@
+import numpy as np
+import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Dropout
+from keras.layers import LSTM
+from keras.callbacks import ModelCheckpoint
+from keras.utils import to_categorical
+
 from transformers import pipeline
 
 def get_lstm_generator():
@@ -5,15 +14,8 @@ def get_lstm_generator():
     outputs = generator(text_inputs='',max_length=20)
     return outputs[0]['generated_text']
 
+# Small LSTM Network to Generate Text for Alice in Wonderland
 def get_lstm_generator2():
-    # Small LSTM Network to Generate Text for Alice in Wonderland
-    import numpy as np
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import Dense
-    from tensorflow.keras.layers import Dropout
-    from tensorflow.keras.layers import LSTM
-    from tensorflow.keras.callbacks import ModelCheckpoint
-    from tensorflow.keras.utils import to_categorical
     # load ascii text and covert to lowercase
     filename = "wonderland.txt"
     raw_text = open(filename, 'r', encoding='utf-8').read()
@@ -56,3 +58,4 @@ def get_lstm_generator2():
     # fit the model
     model.fit(X, y, epochs=20, batch_size=128, callbacks=callbacks_list)
     return model
+
