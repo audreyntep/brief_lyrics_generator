@@ -1,4 +1,5 @@
-# LYRICS GENERATOR WEB API by Eric B., Jordan P., Audrey N.
+# LYRICS GENERATOR WEB API 
+# by Eric B., Jordan P., Audrey N.
 
 Windows configuration
 
