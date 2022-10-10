@@ -33,14 +33,14 @@ Windows configuration
 
 Url <parameter> must be a string of 20 english words.
 
-    **Query parameters :**
+**Query parameters :**
 
     | Type | Params | Values |
     |:-----|:-------|:-------|
     | GET | data | *< string >* |
 
 
-    **Response :**
+**Response :**
 
     | Status | Response |
     |:-----|:-------|
