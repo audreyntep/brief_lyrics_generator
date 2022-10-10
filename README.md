@@ -31,18 +31,18 @@ Windows configuration
 
 3. Query and response
 
-Url <parameter> must be a string of 20 english words.
+Parameter must be a string of 20 english words.
 
 **Query parameters :**
 
-    | Type | Params | Values |
-    |:-----|:-------|:-------|
-    | GET | data | *< string >* |
+| Type  |  Params | Values  |  
+|---|---|---|
+| GET  |  data |  < string > |  
 
 
 **Response :**
 
-    | Status | Response |
-    |:-----|:-------|
-    | 200 | { "lstm_generated_text": *json* } |
-    | 200 | { "transformer_generated_text": *json* } |
+| Status | Response |
+|-----|-------|
+| 200 | { 'lstm generated text': *json* } |
+| 200 | { 'transformer generated text' : *json* } |
