@@ -1,8 +1,8 @@
 # brief
-data/*
-estimation_charges.xlsx
-data_exploration_audrey.ipynb
-run_lm_finetuning.py
+data/*.csv
+models/run_generation.py
+models/save/LSTM_simple_model_v3.h5
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
